@@ -11,9 +11,12 @@
 - BIOS: Latest
 
 ## Setup configs
--
+- Disable secure boot
+- Disable FP, SC, and SD for saving power
+- Disable useless items (i.e. AT, AMT, TPM, etc., *Optional*)
 
 ## Issues
-- [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx) works with `-rtsx_no_adma`, but It has low speed and negative effect on sleeping.
-- A prohibitory symbol displays very occasionally when booting.
+- [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx) works with `-rtsx_no_adma`, but It has low speed and does not work after wake (disabled by default)
+- ~~A prohibitory symbol displays very occasionally when booting.~~
 - Hibernation fails sometimes.
+- standby (S3 to S4) doesn't work, just keeps S3 mode?
