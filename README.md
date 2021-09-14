@@ -13,7 +13,7 @@
 ## Setup configs
 - Disable secure boot
 - Disable FP, SC, and SD for saving power
-- Disable useless items (i.e. AT, AMT, TPM, etc., *Optional*)
+- Disable useless items (i.e. AT, AMT, TPM, etc.) (*Optional*)
 
 ## Issues
 - [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx) works with `-rtsx_no_adma`, but It has low speed and does not work after wake (disabled by default)
