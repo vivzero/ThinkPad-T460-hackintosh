@@ -1,4 +1,5 @@
 # T460 hackintosh
+- Supported OS: Catalina
 
 ## Specs
 - CPU: Intel Core i5-6300U
