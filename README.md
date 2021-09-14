@@ -14,6 +14,6 @@
 -
 
 ## Issues
-- [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx) works, but It has low speed and negative effect on sleeping.
+- [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx) works with `-rtsx_no_adma`, but It has low speed and negative effect on sleeping.
 - A prohibitory symbol displays very occasionally when booting.
 - Hibernation fails sometimes.
