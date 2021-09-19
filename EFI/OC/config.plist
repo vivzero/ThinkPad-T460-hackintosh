@@ -24,6 +24,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Keyboard mapping</string>
+				<key>Path</key>
+				<string>SSDT-KBD.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Fix CPU PM</string>
 				<key>Path</key>
 				<string>SSDT-PLUG.aml</string>
