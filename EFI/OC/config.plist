@@ -40,6 +40,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Fix S5</string>
+				<key>Path</key>
+				<string>SSDT-PMEE.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Load Apple SMBus kext</string>
 				<key>Path</key>
 				<string>SSDT-SMBU.aml</string>
@@ -200,6 +208,36 @@
 				<data></data>
 				<key>Replace</key>
 				<data>WFdBQwoC</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>RFNEVA==</data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>M(\_PTS,1,N) to \ZPTS</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>XF9QVFMB</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>XFpQVFMB</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
