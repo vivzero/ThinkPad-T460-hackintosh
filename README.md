@@ -34,8 +34,7 @@
 - System can't boot into macOS very occasionally.
 - Bluetooth or Wi-Fi is disabled after boot very occasionally.
 - Hibernation (S4) doesn't work sometimes.
-- Idle sleep doesn't work sometimes.
-- kernel panic occurs sometimes when wake from idle sleep. (IONVMeFamily)
+- Idle sleep doesn't work rapidly when AC is connected.
 - It can sleep but wakes after about 30 minutes, and doesn't sleep again.
   * workaround: Disable Power Nap.
 - Function keys have no function.
