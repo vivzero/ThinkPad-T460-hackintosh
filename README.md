@@ -1,5 +1,4 @@
 # T460 hackintosh
-![10.15](https://img.shields.io/badge/macOS-10.15-green)
 ![11](https://img.shields.io/badge/macOS-11-Green)
 
 <details>
@@ -26,7 +25,7 @@
 1. [Create a bootable installer](https://support.apple.com/en-us/HT201372)
 1. Download this [EFI](https://github.com/vivzero/ThinkPad-T460-hackintosh/archive/refs/heads/main.zip) and extract it
 1. Copy "EFI" folder, and paste it into ESP
-1. Install (with twice of rebooting)
+1. Install
 1. Enjoy
 
 </details>
@@ -36,14 +35,17 @@
   * solution: [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx) works with `-rtsx_no_adma`, but It is disabled after wake.
 - Function keys have no function.
   * solution: Use [YogaSMCNC](https://github.com/zhen-zen/YogaSMC/releases/download/1.5.1/YogaSMC-App-Release.dmg).
+- Bluetooth or Wi-Fi is not detected sporadically.
+  * solution: Just restart, or replace WLAN card. (recommend DW1830: It is one of the M.2 cards with *BT 4.1*)
 
-### Catalina only (until commit 85c5ea6)
+<details>
+<summary>Catalina only (until commit 85c5ea6)</summary>
+</br>
+
 - System can't boot into macOS very occasionally.
-- Bluetooth or Wi-Fi is disabled after boot sporadically.
 - Hibernation (S4) doesn't work sometimes.
 - Idle sleep doesn't work rapidly when AC is connected.
-- It can sleep but wakes after about 30 minutes, and doesn't sleep again.
+- It wakes from sleep after about 30 minutes, and doesn't sleep again.
   * workaround: Disable Power Nap.
 
-### Big Sur only (from commit 1610ac7)
-- Wi-Fi is unstable.
+</details>
