@@ -8,7 +8,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-BATX.aml</string>
+				<string>Fix batteries</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -16,7 +16,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-DEV.aml</string>
+				<string>Inject devices</string>
 				<key>Enabled</key>
 				<false/>
 				<key>Path</key>
@@ -24,7 +24,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-KBD.aml</string>
+				<string>Keyboard mapping</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -32,7 +32,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PLUG.aml</string>
+				<string>Fix CPU PM</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -40,7 +40,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PMEE.aml</string>
+				<string>Fix S5</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -48,7 +48,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PNLF.aml</string>
+				<string>Inject PNLF</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -56,7 +56,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-SMBU.aml</string>
+				<string>Fix SMBus</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -64,7 +64,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-USBX.aml</string>
+				<string>Fix USB Power</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -72,7 +72,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-WNTF.aml</string>
+				<string>Store 1 to WNTF</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -392,25 +392,7 @@
 		<array>
 			<dict>
 				<key>BundlePath</key>
-				<string>AirportItlwm_19.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirportItlwm</string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>MaxKernel</key>
-				<string>19.9.9</string>
-				<key>MinKernel</key>
-				<string>19.0.0</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>AirportItlwm_20.kext</string>
+				<string>AirportItlwm.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -875,61 +857,9 @@
 			<string></string>
 		</dict>
 		<key>Force</key>
-		<array>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>System/Library/Extensions/IO80211Family.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IO80211Family</string>
-				<key>Identifier</key>
-				<string>com.apple.iokit.IO80211Family</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string>17.0.0</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-		</array>
+		<array/>
 		<key>Patch</key>
-		<array>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>Base</key>
-				<string>__ZN8AppleRTC18setupDateTimeAlarmEPK11RTCDateTime</string>
-				<key>Comment</key>
-				<string>Disable RTC wake scheduling</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data></data>
-				<key>Identifier</key>
-				<string>com.apple.driver.AppleRTC</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string>19.0.0</string>
-				<key>Replace</key>
-				<data>ww==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
@@ -1068,7 +998,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>j132</string>
+			<string>Default</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1186,9 +1116,9 @@
 			<key>JumpstartHotPlug</key>
 			<false/>
 			<key>MinDate</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>MinVersion</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>AppleInput</key>
 		<dict>
