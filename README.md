@@ -1,5 +1,6 @@
 # T460 hackintosh
 ![10.15](https://img.shields.io/badge/macOS-10.15-green)
+![11](https://img.shields.io/badge/macOS-11-green)
 
 <details>
 <summary><strong>Specs</strong></summary>
@@ -33,6 +34,7 @@
 ## Issues
 - System can't boot into macOS very occasionally.
 - Bluetooth or Wi-Fi is disabled after boot very occasionally.
+- Wi-Fi is unstable on Big Sur.
 - Hibernation (S4) doesn't work sometimes.
 - Idle sleep doesn't work rapidly when AC is connected.
 - It can sleep but wakes after about 30 minutes, and doesn't sleep again.
