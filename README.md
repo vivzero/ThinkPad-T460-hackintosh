@@ -31,21 +31,31 @@
 </details>
 
 ## Issues
+- System can't boot into macOS very occasionally.
+  * workaround: Use verbose mode. (`-v`)
+- Bluetooth or Wi-Fi is not detected sporadically.
+  * solution: Turn it off and on again. If not solved, restart your laptop.
 - SD card reader doesn't work by default.
   * solution: [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx) works with `-rtsx_no_adma`, but It is disabled after wake.
 - Function keys have no function.
   * solution: Use [YogaSMCNC](https://github.com/zhen-zen/YogaSMC/releases/download/1.5.1/YogaSMC-App-Release.dmg).
-- Bluetooth or Wi-Fi is not detected sporadically.
-  * solution: Just restart, or replace WLAN card. (recommend DW1830: It is one of the M.2 cards with *BT 4.1*)
 
 <details>
 <summary>Catalina only (until commit 85c5ea6)</summary>
 </br>
 
-- System can't boot into macOS very occasionally.
 - Hibernation (S4) doesn't work sometimes.
 - Idle sleep doesn't work rapidly when AC is connected.
 - It wakes from sleep after about 30 minutes, and doesn't sleep again.
   * workaround: Disable Power Nap.
+
+</details>
+
+## CPU power consumption
+<details>
+<summary><strong>Idle: 1.5W</strong></summary>
+<br>
+
+![](https://i.imgur.com/5yh34LZ.png)
 
 </details>
