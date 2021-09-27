@@ -33,8 +33,10 @@
 ## Issues
 - System can't boot into macOS very occasionally.
   * workaround: Use verbose mode. (`-v`)
-- Bluetooth or Wi-Fi is not detected sporadically.
-  * solution: Turn it off and on again. If not solved, restart your laptop.
+- Bluetooth or Wi-Fi is not detected sporadically. (Itlwm)
+  * solution: Restart your laptop.
+- Wi-Fi connection is lost several times after boot. (Itlwm)
+  * solution: Just wait.
 - SD card reader doesn't work by default.
   * solution: [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx) works with `-rtsx_no_adma`, but It is disabled after wake.
 - Function keys have no function.
@@ -53,7 +55,7 @@
 
 ## CPU power consumption
 <details>
-<summary><strong>Idle: 1.5W</strong></summary>
+<summary><strong>Idle: 1.4 - 1.5W</strong></summary>
 <br>
 
 ![](https://i.imgur.com/5yh34LZ.png)
