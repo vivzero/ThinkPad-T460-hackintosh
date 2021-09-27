@@ -35,7 +35,7 @@
   * workaround: Use verbose mode. (`-v`)
 - Bluetooth or Wi-Fi is not detected sporadically. (Itlwm)
   * solution: Restart your laptop.
-- Wi-Fi connection is lost several times after boot. (Itlwm)
+- Sometimes Wi-Fi connection is lost several times after boot. (Itlwm)
   * solution: Just wait.
 - SD card reader doesn't work by default.
   * solution: [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx) works with `-rtsx_no_adma`, but It is disabled after wake.
