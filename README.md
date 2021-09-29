@@ -53,11 +53,6 @@
 
 </details>
 
-## CPU power consumption
-<details>
-<summary><strong>Idle: 1.4 - 1.5W</strong></summary>
-<br>
-
-![](https://i.imgur.com/5yh34LZ.png)
-
-</details>
+### Fixed
+- [NVMe kernel panic](https://github.com/acidanthera/bugtracker/issues/1193) occurs after wake.
+  * Use `forceRenderStandby=0`.
