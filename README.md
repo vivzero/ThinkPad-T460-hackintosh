@@ -13,7 +13,7 @@
 | SSD | THNSF5256GCJ7 (00PA997) |
 | LCD | LP140WF6-SPF1 |
 | Audio | Realtek ALC293 (ALC3245) |
-| WLAN | Dual Band AC 8260 |
+| WLAN | ~~Dual Band AC 8260~~ DW1830 |
 | BIOS | Latest |
 
 </details>
@@ -33,10 +33,10 @@
 ## Issues
 - System can't boot into macOS very occasionally.
   * workaround: Use verbose mode. (`-v`)
-- Bluetooth or Wi-Fi is not detected sporadically. (Itlwm)
-  * solution: Restart your laptop.
-- Sometimes Wi-Fi connection is lost several times after boot. (Itlwm)
-  * solution: Just wait.
+- ~~Bluetooth or Wi-Fi is not detected sporadically.~~ (Itlwm)
+  * ~~solution: Restart your laptop.~~
+- ~~Sometimes Wi-Fi connection is lost several times after boot.~~ (Itlwm)
+  * ~~solution: Just wait.~~
 - SD card reader doesn't work by default.
   * solution: [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx) works with `-rtsx_no_adma`, but It is disabled after wake.
 - Function keys have no function.
