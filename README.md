@@ -33,8 +33,8 @@
 ## Issues
 - System can't boot into macOS very occasionally.
   * workaround: Use verbose mode. (`-v`)
-- ~~Bluetooth or Wi-Fi is not detected sporadically.~~ (Itlwm)
-  * ~~solution: Restart your laptop.~~
+- Bluetooth or Wi-Fi is not detected sporadically.
+  * solution: Restart your laptop.
 - ~~Sometimes Wi-Fi connection is lost several times after boot.~~ (Itlwm)
   * ~~solution: Just wait.~~
 - SD card reader doesn't work by default.
@@ -55,4 +55,4 @@
 
 ### Fixed
 - [NVMe kernel panic](https://github.com/acidanthera/bugtracker/issues/1193) occurs after wake.
-  * Use `forceRenderStandby=0`.
+  * solution: Use `forceRenderStandby=0`
