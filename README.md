@@ -41,6 +41,8 @@
   * solution: [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx) works with `-rtsx_no_adma`, but It is disabled after wake.
 - Function keys have no function.
   * solution: Use [YogaSMCNC](https://github.com/zhen-zen/YogaSMC/releases/download/1.5.1/YogaSMC-App-Release.dmg).
+- Sometimes, NVMe drive (00PA997) causes kernel panic after wake.
+  * workaround: Use SATA drive.
 
 <details>
 <summary>Catalina only (until commit 85c5ea6)</summary>
@@ -52,7 +54,3 @@
   * workaround: Disable Power Nap.
 
 </details>
-
-### Fixed
-- [NVMe kernel panic](https://github.com/acidanthera/bugtracker/issues/1193) occurs after wake.
-  * solution: Use `forceRenderStandby=0`
