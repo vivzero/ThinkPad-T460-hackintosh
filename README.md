@@ -13,7 +13,7 @@
 | SSD | THNSF5256GCJ7 (00PA997) |
 | LCD | LP140WF6-SPF1 |
 | Audio | Realtek ALC293 (ALC3245) |
-| WLAN | ~~Dual Band AC 8260~~ DW1830 |
+| WLAN | Dual Band AC 8260 |
 | BIOS | Latest |
 
 </details>
