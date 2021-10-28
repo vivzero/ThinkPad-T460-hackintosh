@@ -31,26 +31,15 @@
 </details>
 
 ## Issues
-- System can't boot into macOS very occasionally.
-  * workaround: Use verbose mode. (`-v`)
 - Bluetooth or Wi-Fi is not detected sporadically.
-  * solution: Restart your laptop.
-- ~~Sometimes Wi-Fi connection is lost several times after boot.~~ (Itlwm)
-  * ~~solution: Just wait.~~
+  * workaround: Restart your laptop.
+- Sometimes Wi-Fi connection is lost after boot. (Itlwm)
+  * workaround: Just wait.
 - SD card reader doesn't work by default.
   * solution: [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx) works with `-rtsx_no_adma`, but It is disabled after wake.
 - Function keys have no function.
   * solution: Use [YogaSMCNC](https://github.com/zhen-zen/YogaSMC/releases/download/1.5.1/YogaSMC-App-Release.dmg).
 - Sometimes, NVMe drive (00PA997) causes kernel panic after wake.
   * workaround: Use SATA drive.
-
-<details>
-<summary>Catalina only (until commit 85c5ea6)</summary>
-</br>
-
-- Hibernation (S4) doesn't work sometimes.
-- Idle sleep doesn't work rapidly when AC is connected.
-- It wakes from sleep after about 30 minutes, and doesn't sleep again.
-  * workaround: Disable Power Nap.
 
 </details>
