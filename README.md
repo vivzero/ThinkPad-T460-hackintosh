@@ -39,7 +39,7 @@
   * solution: [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx) works with `-rtsx_no_adma`, but It is disabled after wake.
 - Function keys have no function.
   * solution: Use [YogaSMCNC](https://github.com/zhen-zen/YogaSMC/releases/download/1.5.1/YogaSMC-App-Release.dmg).
-- Sometimes, NVMe drive (00PA997) causes kernel panic after wake.
+- Sometimes, NVMe drive (00PA997) causes kernel panic.
   * workaround: Use SATA drive.
 
 </details>
